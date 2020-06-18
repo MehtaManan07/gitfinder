@@ -10,7 +10,12 @@ const UserItem = (props) => {
         style={{ width: "60px" }}
       />
       <h1> {props.user.login} </h1>
-      <a target="_blank" href={props.user.html_url} className="btn btn-dark btn-sm my-1">
+      <a
+        rel="noopener noreferrer"
+        target="_blank"
+        href={props.user.html_url}
+        className="btn btn-dark btn-sm my-1"
+      >
         VIEW PROFILE
       </a>
     </div>
